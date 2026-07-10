@@ -1,4 +1,4 @@
-# Understanding Transformer Architecture
+# Transformer Architecture
 
 This document provides a concise overview of the key components and mechanisms that constitute the Transformer architecture, the foundation for modern Large Language Models (LLMs).
 
