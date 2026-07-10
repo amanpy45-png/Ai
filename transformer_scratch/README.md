@@ -1,37 +1,48 @@
-GPT-Style Transformer
-A custom, modular PyTorch implementation of a Decoder-only Transformer.
+# Transformer Language Model
 
-Architecture
-Token & Positional Embeddings: Maps indices to vector space with sequence position information.
+A GPT-style decoder-only Transformer for autoregressive language modeling.
 
-Multi-Head Attention: Implements causal (masked) self-attention to ensure autoregressive generation.
+## Forward Pass Summary
 
-Transformer Blocks: Contains multi-head attention and feed-forward networks with residual connections and layer normalization.
+| Step | Description | Output Shape |
+|------|-------------|--------------|
+| 1. Input | Token IDs | `(batch_size, seq_len)` |
+| 2. Embedding | Token embeddings + Positional embeddings | `(batch_size, seq_len, embed_dim)` |
+| 3. Transformer Blocks | N blocks, each with causal self-attention and a feed-forward network (FFN) | `(batch_size, seq_len, embed_dim)` |
+| 4. Output | Projection to vocabulary logits | `(batch_size, seq_len, vocab_size)` |
 
-Final Projection: Maps hidden states to vocabulary logits for next-token prediction.
+## Architecture Details
 
-File Map
-model.py: Core architecture definitions (TokenEmbedding, PostionalEmbedding, SelfAttention, MultiHeadAttention, FeedForward, TransformerBlock, Transformer).
+```
+Input (token IDs)
+            │
+            ▼
+Token Embedding + Positional Embedding
+            │
+            ▼
+┌─────────────────────────┐
+│  Transformer Block × N  │
+│ ┌─────────────────────┐ │
+│ │Causal Self-Attention│ │
+│ └─────────────────────┘ │
+│ ┌─────────────────────┐ │
+│ │Feed-Forward Network │ |
+│ └─────────────────────┘ │
+└─────────────────────────┘
+           │
+           ▼
+Output Logits (vocab_size)
+```
 
-config.py: Centralized hyperparameter configuration (VOCAB_SIZE, EMBED_DIM, etc.).
+- **Causal self-attention** ensures each token can only attend to itself and previous tokens, preserving the autoregressive property.
+- **Feed-forward network (FFN)** applies a position-wise non-linear transformation after attention in each block.
+- **N** denotes the total number of stacked Transformer blocks (a configurable hyperparameter).
 
-test.py: Validation script to verify tensor shapes and ensure the causal mask is working.
+## Input / Output
 
-Setup
-Define your model architecture constants in config.py.
+- **Input:** `torch.LongTensor` of shape `(batch_size, seq_len)` containing token indices.
+- **Output:** Logits of shape `(batch_size, seq_len, vocab_size)`, representing the unnormalized probability distribution over the vocabulary for each position.
 
+## License
 
-Run the validation script:
-
-Bash
-python test.py
-Key Components
-The Transformer class orchestrates the forward pass:
-
-Input: (batch, seq_len)
-
-Embedding: Sum of token and positional embeddings (batch, seq_len, embed_dim).
-
-Processing: Passes through N TransformerBlock layers.
-
-Output: Logits for vocabulary (batch, seq_len, vocab_size).
+MIT LICENSE
