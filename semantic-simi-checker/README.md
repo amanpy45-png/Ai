@@ -1,23 +1,23 @@
-# 🔍 Semantic Search Engine using BERT
+# Semantic Search Engine using BERT
 
 A semantic search engine built using **BERT**, **PyTorch**, **Hugging Face Transformers**, and **Streamlit**. Instead of matching exact keywords, the application retrieves documents based on their **semantic meaning** using contextual embeddings and cosine similarity.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔍 Semantic search using BERT embeddings
-- 🧠 Context-aware sentence representations
-- 📊 Masked Mean Pooling for sentence embedding generation
-- 📈 Cosine Similarity-based ranking
-- 📂 Load documents dynamically from `documents.txt`
-- ⚡ Precomputed document embeddings for faster search
-- 🎨 Interactive Streamlit interface
-- 🏆 Top-K ranked search results
+- Semantic search using BERT embeddings
+- Context-aware sentence representations
+- Masked Mean Pooling for sentence embedding generation
+- Cosine Similarity-based ranking
+- Load documents dynamically from `documents.txt`
+- Precomputed document embeddings for faster search
+- Interactive Streamlit interface
+- Top-K ranked search results
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - PyTorch
@@ -26,7 +26,7 @@ A semantic search engine built using **BERT**, **PyTorch**, **Hugging Face Trans
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Semantic-Search-Engine/
@@ -42,7 +42,7 @@ Semantic-Search-Engine/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Clone the repository
 
@@ -66,7 +66,7 @@ streamlit run app.py
 
 ---
 
-## 📖 How It Works
+## How It Works
 
 ### Step 1 — Load Documents
 
@@ -104,7 +104,7 @@ Documents are sorted by similarity score and the **Top-K** results are displayed
 
 ---
 
-## 🧠 Model Details
+## Model Details
 
 - **Model:** `bert-base-uncased`
 - **Embedding Size:** 768
@@ -113,7 +113,7 @@ Documents are sorted by similarity score and the **Top-K** results are displayed
 
 ---
 
-## 📷 Example
+## Example
 
 ### Query
 
@@ -124,16 +124,16 @@ I enjoy coding in Python.
 ### Output
 
 ```
-🥇 Python is a programming language. (91.2%)
+Python is a programming language. (91.2%)
 
-🥈 I love Machine Learning. (72.3%)
+I love Machine Learning. (72.3%)
 
-🥉 Artificial Intelligence is transforming the world. (58.1%)
+Artificial Intelligence is transforming the world. (58.1%)
 ```
 
 ---
 
-## 💡 Key Concepts Used
+##  Key Concepts Used
 
 - Transformer Architecture
 - BERT
@@ -146,7 +146,7 @@ I enjoy coding in Python.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Replace BERT Mean Pooling with **Sentence-BERT (SBERT)** for better sentence embeddings.
 - Search over PDFs and text files.
@@ -156,7 +156,7 @@ I enjoy coding in Python.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Aman Negi**
 
