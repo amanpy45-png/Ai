@@ -2,14 +2,6 @@ import fitz
 
 
 def load_pdf(pdf_source):
-    """
-    Loads a PDF from either:
-    1. A file path (str)
-    2. A Streamlit uploaded file
-
-    Returns:
-        List[str] -> list of extracted sentences
-    """
 
     # Local PDF
     if isinstance(pdf_source, str):
@@ -30,7 +22,6 @@ def load_pdf(pdf_source):
 
     document.close()
 
-    # Very basic sentence splitting (we'll improve later)
     documents = [
         sentence.strip()
         for sentence in text.split("\n")
