@@ -1,30 +1,22 @@
-# 🔍 PDF Semantic Search Engine using BERT
+# PDF Semantic Search Engine using BERT
 
 A semantic search engine built using **BERT**, **PyTorch**, **Hugging Face Transformers**, **PyMuPDF**, and **Streamlit**. The application allows users to upload any PDF and retrieve the most semantically relevant content based on the meaning of their query rather than exact keyword matching.
 
 ---
 
-## 📸 Demo
+## Features
 
-> Add a screenshot of the application here.
-
-![Application Demo](screenshot.png)
-
----
-
-## 🚀 Features
-
-- 📄 Upload any PDF through the Streamlit interface
-- 🧠 Generate contextual embeddings using BERT (`bert-base-uncased`)
-- 📊 Masked Mean Pooling for sentence embedding generation
-- 🔍 Semantic search using Cosine Similarity
-- 🏆 Top-K ranked search results
-- ⚡ Cached document embeddings for faster searches
-- 🧩 Modular and reusable project architecture
+- Upload any PDF through the Streamlit interface
+- Generate contextual embeddings using BERT (`bert-base-uncased`)
+- Masked Mean Pooling for sentence embedding generation
+- Semantic search using Cosine Similarity
+- Top-K ranked search results
+- Cached document embeddings for faster searches
+- Modular and reusable project architecture
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - PyTorch
@@ -34,7 +26,7 @@ A semantic search engine built using **BERT**, **PyTorch**, **Hugging Face Trans
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 PDF-Semantic-Search/
@@ -45,12 +37,11 @@ PDF-Semantic-Search/
 ├── pdf_loader.py          # PDF loading and text extraction
 ├── requirements.txt
 ├── README.md
-└── screenshot.png
 ```
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Clone the repository
 
@@ -74,7 +65,7 @@ streamlit run app.py
 
 ---
 
-## 📖 How It Works
+## How It Works
 
 ### Step 1 — Upload a PDF
 
@@ -118,18 +109,18 @@ The application returns the **Top-K** most semantically similar results.
 
 ---
 
-## 🧠 Model Details
+## Model Details
 
-| Component | Value |
-|-----------|-------|
-| Model | bert-base-uncased |
-| Embedding Size | 768 |
-| Pooling Strategy | Masked Mean Pooling |
-| Similarity Metric | Cosine Similarity |
+| Component         |  Value              |
+|-------------------|---------------------|
+| Model             | bert-base-uncased   |
+| Embedding Size    | 768                 |
+| Pooling Strategy  | Masked Mean Pooling |
+| Similarity Metric | Cosine Similarity   |
 
 ---
 
-## 📷 Example
+##  Example
 
 ### Query
 
@@ -149,7 +140,7 @@ Machine Learning
 
 ---
 
-## 💡 Key Concepts Implemented
+##  Key Concepts Implemented
 
 - Transformer Architecture
 - BERT
@@ -163,7 +154,7 @@ Machine Learning
 
 ---
 
-## 📌 Current Limitations
+##  Current Limitations
 
 - Basic sentence splitting is used after PDF text extraction.
 - Performance may decrease for very large PDFs.
@@ -171,7 +162,7 @@ Machine Learning
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Better sentence segmentation.
 - Support multiple PDFs simultaneously.
@@ -181,11 +172,11 @@ Machine Learning
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Aman Negi**
 
-- GitHub: https://github.com/your-username
+- GitHub: https://github.com/amanpy45-png
 - LinkedIn: https://www.linkedin.com/in/amanpy54/
 
 ---
