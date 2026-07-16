@@ -1,31 +1,23 @@
-# 🔍 Chunk-Based PDF Semantic Search using BERT
+# Chunk-Based PDF Semantic Search using BERT
 
 A semantic search engine built using **BERT**, **PyTorch**, **Hugging Face Transformers**, **PyMuPDF**, **NLTK**, and **Streamlit**. Unlike traditional keyword search, this application retrieves text based on semantic meaning and improves retrieval quality using **overlapping text chunking**.
 
 ---
 
-## 📸 Demo
+##  Features
 
-> Add a screenshot of the application here.
-
-![Application Demo](screenshot.png)
-
----
-
-## 🚀 Features
-
-- 📄 Upload any PDF
-- 🧠 Generate contextual embeddings using BERT (`bert-base-uncased`)
-- ✂️ Intelligent text chunking with configurable chunk size and overlap
-- 📊 Masked Mean Pooling for sentence embeddings
-- 🔍 Semantic search using Cosine Similarity
-- 🏆 Top-K ranked search results
-- ⚡ Cached document embeddings for faster searches
-- 🧩 Modular and reusable architecture
+-  Upload any PDF
+-  Generate contextual embeddings using BERT (`bert-base-uncased`)
+-  Intelligent text chunking with configurable chunk size and overlap
+-  Masked Mean Pooling for sentence embeddings
+-  Semantic search using Cosine Similarity
+-  Top-K ranked search results
+-  Cached document embeddings for faster searches
+-  Modular and reusable architecture
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python
 - PyTorch
@@ -36,7 +28,7 @@ A semantic search engine built using **BERT**, **PyTorch**, **Hugging Face Trans
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Chunk-Based-PDF-Semantic-Search/
@@ -48,12 +40,11 @@ Chunk-Based-PDF-Semantic-Search/
 ├── chunking.py            # Sentence extraction & overlapping chunking
 ├── requirements.txt
 ├── README.md
-└── screenshot.png
 ```
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Clone the repository
 
@@ -69,7 +60,7 @@ cd chunk-based-pdf-semantic-search
 pip install -r requirements.txt
 ```
 
-### Download NLTK tokenizer (first time only)
+### Download NLTK tokenizer 
 
 ```python
 import nltk
@@ -86,7 +77,7 @@ streamlit run app.py
 
 ---
 
-## 📖 How It Works
+##  How It Works
 
 ### Step 1 — Upload PDF
 
@@ -136,7 +127,7 @@ The Top-K most semantically relevant chunks are returned.
 
 ---
 
-## 🧠 Chunking Strategy
+##  Chunking Strategy
 
 Example with:
 
@@ -172,7 +163,7 @@ This overlapping strategy preserves context between neighboring chunks and impro
 
 ---
 
-## 🧠 Model Details
+##  Model Details
 
 | Component | Value |
 |-----------|-------|
@@ -184,7 +175,7 @@ This overlapping strategy preserves context between neighboring chunks and impro
 
 ---
 
-## 💡 Key Concepts Implemented
+##  Key Concepts Implemented
 
 - Transformer Architecture
 - BERT
@@ -200,7 +191,7 @@ This overlapping strategy preserves context between neighboring chunks and impro
 
 ---
 
-## 📌 Current Limitations
+##  Current Limitations
 
 - Fixed-size chunking may split related ideas.
 - Large PDFs require embedding every chunk, increasing processing time.
@@ -209,7 +200,7 @@ This overlapping strategy preserves context between neighboring chunks and impro
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Semantic chunking
 - Sentence-BERT (SBERT)
@@ -220,7 +211,7 @@ This overlapping strategy preserves context between neighboring chunks and impro
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Aman Negi**
 
