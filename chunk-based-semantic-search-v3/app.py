@@ -5,10 +5,7 @@ from search import semantic_search
 from pdf_loader import load_pdf
 from chunking import chunk_text
 
-
-# ---------------------------------
 # Page Configuration
-# ---------------------------------
 
 st.set_page_config(
     page_title="Semantic Search Engine",
@@ -16,16 +13,12 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🔍 Semantic Search Engine")
+st.title("Semantic Search Engine")
 st.markdown(
     "Upload a PDF and search it using **BERT semantic embeddings**."
 )
 
-
-# ---------------------------------
 # Build Search Index
-# ---------------------------------
-
 @st.cache_resource
 def build_search_index(uploaded_file):
 
@@ -47,26 +40,18 @@ def build_search_index(uploaded_file):
 
     return documents, document_embeddings
 
-
-# ---------------------------------
 # Upload PDF
-# ---------------------------------
-
 uploaded_file = st.file_uploader(
-    "📄 Upload a PDF",
+    "Upload a PDF",
     type=["pdf"]
 )
 
-
-# ---------------------------------
 # Main Application
-# ---------------------------------
-
 if uploaded_file is not None:
 
     documents, document_embeddings = build_search_index(uploaded_file)
 
-    query = st.text_input("🔍 Enter your query")
+    query = st.text_input("Enter your query")
 
     k = st.slider(
         "Top Results",
@@ -75,7 +60,7 @@ if uploaded_file is not None:
         value=min(3, len(documents))
     )
 
-    if st.button("🚀 Search"):
+    if st.button("Search"):
 
         if not query.strip():
             st.warning("Please enter a query.")
@@ -113,4 +98,4 @@ if uploaded_file is not None:
 
 else:
 
-    st.info("👆 Upload a PDF to begin searching.")
+    st.info("Upload a PDF to begin searching.")
