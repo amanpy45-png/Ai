@@ -41,7 +41,7 @@ Summarize long articles in seconds using **Hugging Face Transformers** (DistilBA
 ##  Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/amanpy45-png/Ai.git
 cd ai-text-summarizer
 
 python -m venv venv
