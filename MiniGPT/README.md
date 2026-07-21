@@ -1,4 +1,4 @@
-# 🧠 MiniGPT: Decoder-Only Transformer from Scratch
+#  MiniGPT: Decoder-Only Transformer from Scratch
 
 A lightweight implementation of a **GPT-style Decoder-Only Transformer** built completely from scratch using **PyTorch**. This project was developed to understand the internal architecture of modern Large Language Models (LLMs) by implementing every core component instead of relying on high-level libraries.
 
@@ -6,7 +6,7 @@ A lightweight implementation of a **GPT-style Decoder-Only Transformer** built c
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Character-level tokenizer
 - Custom PyTorch Dataset & DataLoader
@@ -22,7 +22,7 @@ A lightweight implementation of a **GPT-style Decoder-Only Transformer** built c
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 MiniGPT/
@@ -45,7 +45,7 @@ MiniGPT/
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 ```
 Input Text
@@ -80,7 +80,7 @@ Next Token Prediction
 
 ---
 
-## 🧩 Components Implemented
+##  Components Implemented
 
 ### Tokenizer
 - Character-level vocabulary
@@ -172,7 +172,7 @@ Residual Add
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 Clone the repository
 
@@ -189,7 +189,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📚 Training
+##  Training
 
 Place your training corpus inside
 
@@ -211,7 +211,7 @@ checkpoints/
 
 ---
 
-## ✨ Text Generation
+##  Text Generation
 
 After training,
 
@@ -231,7 +231,7 @@ The model generates text autoregressively one token at a time.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - PyTorch
@@ -239,7 +239,7 @@ The model generates text autoregressively one token at a time.
 
 ---
 
-## 📖 What I Learned
+##  What I Learned
 
 This project helped me understand the internal working of GPT-style language models by implementing every major building block from scratch, including:
 
@@ -256,7 +256,7 @@ This project helped me understand the internal working of GPT-style language mod
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Character-level tokenizer
 - Small model size
@@ -265,7 +265,7 @@ This project helped me understand the internal working of GPT-style language mod
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Byte Pair Encoding (BPE) Tokenizer
 - Top-k & Top-p Sampling
@@ -279,18 +279,10 @@ This project helped me understand the internal working of GPT-style language mod
 
 ---
 
-## 📜 License
-
-This project is released under the MIT License.
-
----
-
-## 👨‍💻 Author
+##  Author
 
 **Aman Negi**
 
-B.Tech CSE | AI & Data Science Enthusiast
-
 LinkedIn: https://www.linkedin.com/in/amanpy54/
 
-GitHub: https://github.com/<your-github-username>
+GitHub: https://github.com/amanpy45-png/
