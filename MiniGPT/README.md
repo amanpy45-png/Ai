@@ -265,20 +265,6 @@ This project helped me understand the internal working of GPT-style language mod
 
 ---
 
-##  Future Improvements
-
-- Byte Pair Encoding (BPE) Tokenizer
-- Top-k & Top-p Sampling
-- Temperature Sampling
-- Learning Rate Scheduler
-- Mixed Precision Training
-- Flash Attention
-- KV Cache
-- Larger Training Corpus
-- GPT-2 Style Architecture
-
----
-
 ##  Author
 
 **Aman Negi**
